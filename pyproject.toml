@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "olarte"
+version = "0.1.0"
+description = ""
+authors = ["Riccardo Pala <rppala3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rdflib = "^7.0.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[tool.poetry.scripts]
+app = "olarte.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
